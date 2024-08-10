@@ -1,0 +1,9 @@
+{
+  "title": "Spark Cluster Metrics",
+  "panels": [{
+    "title": "Pod CPU Usage",
+    "targets": [{
+      "expr": "avg(rate(container_cpu_usage_seconds_total{container='spark'}[5m]))"
+    }]
+  }]
+}
